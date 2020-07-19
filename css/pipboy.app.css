@@ -101,17 +101,15 @@ body::after {
 
 }
 
-.nav-link {
+.nav-link, .nav-link:hover {
     padding: 5px 10px;
     position: relative;
     z-index: 50;
     background: #272b23;
     margin: auto;
+    color: #51fe7d !important;
 }
 
-.nav-tabs .nav-link.active {
-    color: #51fe7d;
-}
 
 .nav-tabs > li:nth-child(2) > a {
     opacity: .6;
@@ -209,6 +207,7 @@ ul a {
     list-style: none;
     margin: 0px;
 }
+
 
 .item-list li.active {
     list-style: square;
