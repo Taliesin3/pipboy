@@ -1,8 +1,8 @@
 $(document).ready(function(){
     var weapons = [
         {
-            "name": "44_pistol",
-            "damage": 48,
+            "name": "pipboy_portfolio",
+            "langs": "HTML, CSS, JS",
             "fire_rate": 6,
             "range": 119,
             "accuracy": 66,
@@ -11,7 +11,7 @@ $(document).ready(function(){
             "img": null
         },
         {
-            "name": "10mm_pistol",
+            "name": "khawiz_leonard",
             "damage": 18,
             "fire_rate": 46,
             "range": 103,
@@ -21,7 +21,7 @@ $(document).ready(function(){
             "img": null
         },
         {
-            "name": "assault_rifle",
+            "name": "bug_tracker",
             "damage": 30,
             "fire_rate": 40,
             "range": 132,
@@ -41,7 +41,7 @@ $(document).ready(function(){
                 console.log(weapons[item])
 
                 var container = $('.item-stats');
-                container.find('.damage').html(weapons[item].damage);
+                container.find('.damage').html(weapons[item].langs);
                 container.find('.fire_rate').html(weapons[item].fire_rate);
                 container.find('.range').html(weapons[item].range);
                 container.find('.accuracy').html(weapons[item].accuracy);
