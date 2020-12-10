@@ -184,8 +184,8 @@ $(document).ready(function(){
             "field5": "",
             "value": "",
             "img": "",
-            "info1": "",
-            "info2": "",
+            "info1": "Regularly worked exlcusively in Mandarin with Chinese partners such as the Supreme People's Court, Renmin University and the Ministry of Justice.",
+            "info2": "Provided ad hoc interpretation for English-speaking guests during visits to China.",
             "info3": ""
         }
 
