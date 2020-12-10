@@ -194,8 +194,10 @@ a {
     position: relative;
     height: 40vh;
     max-height: 400px;
+    /*
     margin-top: 50px;
     margin-bottom: 50px;
+    */
     margin-left: calc(50% - 125px);
 }
 
@@ -278,6 +280,10 @@ a {
     text-decoration: none;
 }
 
+.row > .col-3, .col-4, .col-8, .col-9 {
+    border: 1px solid #272b23;
+}
+
 #detail-container li {
     list-style: square;
     margin-bottom: 10px;
@@ -300,7 +306,7 @@ a {
 
 .item-stats .row {
     background: rgba(81, 254, 125, 0.15);
-    border: 2px solid #272b23;
+    /*border: 2px solid #272b23;*/
 }
 
 #level-disclaimer {

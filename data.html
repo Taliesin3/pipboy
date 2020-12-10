@@ -36,13 +36,13 @@
                 
                     <ul class="nav nav-tabs">
                         <li class="nav-item">
-                            <a href="#apparel" class="nav-link active" data-toggle="tab" role="tab">
-                                CAREER
+                            <a href="#portfolio" class="nav-link active" data-toggle="tab">
+                                PORTFOLIO
                             </a>
                         </li>
                         <li class="nav-item">
-                            <a href="#weapons" class="nav-link" data-toggle="tab">
-                                PORTFOLIO
+                            <a href="#career" class="nav-link" data-toggle="tab" role="tab">
+                                CAREER
                             </a>
                         </li>
                         
@@ -56,11 +56,11 @@
                     </ul>
 
                     <div class="tab-content">
-                        <div class="tab-pane" id="weapons" role="tabpanel">
-                            <ul class="item-list">
-                                <li class="active"><a href="#" id="44_pistol_1" class="44_pistol">Fallout Pipboy Portfolio Site</a></li>
-                                <li><a href="#" id="10mm_pistol_1" class="10mm_pistol">Khawiz Leonard: An NBA Quiz Site</a></li>
-                                <li><a href="#" id="assault_rifle_1" class="assault_rifle">Bug Tracker/Project Management Web App (TBC)</a></li>
+                        <div class="tab-pane active full" id="portfolio" role="tabpanel">
+                            <ul class="item-list item-list1">
+                                <li class="active"><a href="#" id="option1" class="option1">To Do Note App</a></li>
+                                <li><a href="#" id="khawiz" class="khawiz">Khawiz Leonard: An NBA Quiz Site</a></li>
+                                <li><a href="#" id="pipboy" class="pipboy">Fallout Pipboy Portfolio Site</a></li>
                             </ul>
                             <div id="vaultboy-glasses-container" class="vaultboy-container">
                                 <img id="glasses-gif" src="assets/glasses2.gif" class="vaultboy greenify" />
@@ -70,49 +70,46 @@
                                 <h4>Project Summary:</h4>
                                 <div class="row-highlight">
                                     <div class="row">
-                                        <div class="col-12">
-                                            <span class="damage float-right">HTML CSS JS</span> <strong>Front End</strong>
+                                        <div class="col-3">
+                                            <strong>Front End</strong>
+                                        </div>
+                                        <div class="col-9">
+                                            <span class="frontend float-right">React, Material UI</span>
                                         </div>
                                     </div>
                                 </div>
                                 <div class="row-highlight">
                                     <div class="row">
-                                        <div class="col-12">
-                                            <span class="fire_rate float-right">N/A</span> <strong>Back End</strong>
+                                        <div class="col-3">
+                                            <strong>Back End</strong>
+                                        </div>
+                                        <div class="col-9">
+                                            <span class="backend float-right">Node, Express, Mongoose</span>
                                         </div>
                                     </div>
                                 </div>
                                 <div class="row-highlight">
                                     <div class="row">
-                                        <div class="col-12">
-                                            <span class="range float-right">N/A</span> <strong>Database</strong>
+                                        <div class="col-3">
+                                            <strong>Database</strong>
                                         </div>
-                                    </div>
-                                </div>
-                                <div class="row-highlight">
-                                    <div class="row">
-                                        <div class="col-12">
-                                            <span class="accuracy float-right"><a href="taliesin3.github.io/pipboy/"><u>GitHub Pages</u></a></span> <strong>Link</strong>
+                                        <div class="col-9">
+                                            <span class="database float-right">MongoDB</span> 
                                         </div>
                                     </div>
                                 </div>
                                 
                                 <div class="row-highlight">
                                     <div class="row">
-                                        <div class="col-12">
-                                            <span class="weight float-right">Highly customised CSS</span> <strong>Notes</strong>
+                                        <div class="col-3">
+                                            <strong>Link</strong>
+                                        </div>
+                                        <div class="col-9">
+                                            <span class="link float-right"><a href="nathanhmiles.github.io/todo-app/"><u>GitHub Repo</u></a></span>
                                         </div>
                                     </div>
                                 </div>
-                                <!-- Other info needed?
-                                <div class="row-highlight">
-                                    <div class="row">
-                                        <div class="col-12">
-                                            <span class="value float-right">99</span> Value
-                                        </div>
-                                    </div>
-                                </div>
-                                -->
+
                                 <div id="detail-container">
                                     <h4>Project Overview:</h4>
                                     <ul>
@@ -124,12 +121,11 @@
                             </div>
                         </div>
                             
-                        <div class="tab-pane active full" id="apparel" role="tabpanel">
-                            <ul class="item-list">
-                                <li class="active"><a href="#" id="44_pistol_1" class="gbcc">Senior Project Manager, <br/>Great Britain China Centre</a></li>
-                                <li><a href="#" id="10mm_pistol_1" class="eucosh">Office Manager, <br/>EU-China Occupational Health and Safety Project</a></li>
-                                <li><a href="#" id="assault_rifle_1" class="british_council">Project Officer, British Council</a></li>
-                                <li><a href="#" id="10mm_pistol_1" class="eucosh2">Language and Communications Assistant, <br/>EU-China Occupational Health and Safety Project</a></li>
+                        <div class="tab-pane" id="career" role="tabpanel">
+                            <ul class="item-list item-list2">
+                                <li class="active"><a href="#" id="gbcc" class="gbcc">Great Britain China Centre</a></li>
+                                <li><a href="#" id="eucosh" class="eucosh">EU-China Occupational Health and Safety Project</a></li>
+                                <li><a href="#" id="option1" class="british_council">British Council</a></li>
                             </ul>
                             <div id="vaultboy-walking-container" class="vaultboy-container">
                                 <img id="walk-gif" src="assets/pipboy-status.gif" class="vaultboy greenify" />
@@ -139,22 +135,31 @@
                                 <h4>Job Summary:</h4>
                                 <div class="row-highlight">
                                     <div class="row">
-                                        <div class="col-12">
-                                            <span class="damage float-right">London/China</span> <strong>Location</strong>
+                                        <div class="col-3">
+                                            <strong>Role</strong>
+                                        </div>
+                                        <div class="col-9">
+                                            <span class="role float-right">Senior Project Manager</span>
                                         </div>
                                     </div>
                                 </div>
                                 <div class="row-highlight">
                                     <div class="row">
-                                        <div class="col-12">
-                                            <span class="fire_rate float-right">2020</span> <strong>Date</strong>
+                                        <div class="col-3">
+                                            <strong>Location</strong>
+                                        </div>
+                                        <div class="col-9">
+                                            <span class="location float-right">London/China</span>
                                         </div>
                                     </div>
                                 </div>
                                 <div class="row-highlight">
                                     <div class="row">
-                                        <div class="col-12">
-                                            <span class="range float-right">2016</span> <strong>Start Date</strong>
+                                        <div class="col-3">
+                                            <strong>Dates</strong>
+                                        </div>
+                                        <div class="col-9">
+                                            <span class="dates float-right">2016-2020</span>
                                         </div>
                                     </div>
                                 </div>
@@ -162,15 +167,21 @@
                                 
                                 <div class="row-highlight">
                                     <div class="row">
-                                        <div class="col-12">
-                                            <span class="weight float-right">Rule of Law, International Cooperation</span> <strong>Area of Work</strong>
+                                        <div class="col-3">
+                                            <strong>Area of Work</strong>
+                                        </div>
+                                        <div class="col-9">
+                                            <span class="area float-right">Rule of Law, International Cooperation</span>
                                         </div>
                                     </div>
                                 </div>
                                 <div class="row-highlight">
                                     <div class="row">
-                                        <div class="col-12">
-                                            <span class="accuracy float-right"><a href="http://www.gbcc.org.uk"><u>GBCC</u></a></span> <strong>Link</strong>
+                                        <div class="col-3">
+                                            <strong>Link</strong>
+                                        </div>
+                                        <div class="col-9">
+                                            <span class="link float-right"><a href="http://www.gbcc.org.uk"><u>GBCC</u></a></span>
                                         </div>
                                     </div>
                                 </div>

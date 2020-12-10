@@ -1,58 +1,67 @@
 $(document).ready(function(){
-    var weapons = [
+    var cvdata = [
         {
             // Pipboy
-            "name": "44_pistol",
-            "damage": "HTML CSS JS",
-            "fire_rate": "N/A",
-            "range": "N/A",
-            "accuracy": "<a href='taliesin3.github.io/pipboy/'><u>GitHub Pages</u></a>",
-            "weight": "Highly customised CSS",
+            "name": "pipboy",
+            "frontend": "HTML, CSS, JavaScript",
+            "backend": "N/A",
+            "database": "N/A",
+            "link": "<a href='taliesin3.github.io/pipboy/'><u>GitHub Pages</u></a>",
+            "field5": "",
             "value": 99,
-            "img": null
-        },
-        {
-            // Khawiz Leonard
-            "name": "10mm_pistol",
-            "damage": "HTML CSS JS",
-            "fire_rate": "Django",
-            "range": "Sqlite3",
-            "accuracy": "<a href='github.com/Taliesin3/Khawiz-Leonard'><u>GitHub</u></a>",
-            "weight": "API usage",
-            "value": 53,
-            "img": null
-        },
-        {
-            // Bug tracker
-            "name": "assault_rifle",
-            "damage": "HTML CSS React",
-            "fire_rate": "Express.js",
-            "range": "MongoDB (TBC)",
-            "accuracy": "N/A",
-            "weight": "N/A",
-            "value": 144,
-            "img": null
-        },
-        {
-            "name": "degree",
-            "damage": "B.A. First Class (Hons)",
-            "fire_rate": "Chinese and Korean",
-            "range": "SOAS University, London",
-            "accuracy": "2009-2013",
-            "weight": "",
-            "value": "",
-            "img": "",
-            "info1": "",
+            "img": null,
+            "info1": "Highly customised CSS, custom edited GIFs",
             "info2": "",
             "info3": ""
         },
         {
+            // Khawiz Leonard
+            "name": "khawiz",
+            "frontend": "HTML, CSS, JavaScript, Bootstrap",
+            "backend": "Python (Django)",
+            "database": "PostgreSQL",
+            "link": "<a href='github.com/Taliesin3/Khawiz-Leonard'><u>GitHub</u></a>",
+            "field5": "",
+            "value": 53,
+            "img": null,
+            "info1": "Procedurally-generated questions via Rakuten RadipAPI",
+            "info2": "",
+            "info3": ""
+        },
+        {
+            // Bug tracker
+            "name": "option1",
+            "frontend": "React, Material UI",
+            "backend": "Node, Express, Mongoose",
+            "database": "MongoDB",
+            "link": "<a href='nathanhmiles.github.io/todo-app/'><u>GitHub Repo</u></a>",
+            "field5": "",
+            "value": 144,
+            "img": null,
+            "info1": "Features include: User login, note editing, note deletion and protected routes.",
+            "info2": "Secure user registration and login, score tracking, user quiz history and quiz record.",
+            "info3": ""
+        },
+        {
+            "name": "degree",
+            "grade": "B.A. First Class (Hons)",
+            "subject": "Chinese and Korean",
+            "institution": "SOAS University, London",
+            "year": "2013",
+            "field5": "2009",
+            "value": "",
+            "img": "",
+            "info1": "2010 - 2011 Beijing Normal University, China - Chinese Language Year Abroad",
+            "info2": "Summer 2012 - Studied at Korea University, Seoul – Intermediate Korean (A), South-North Korean Relations in Historical Context (A) (Summer Programme)",
+            "info3": ""
+        },
+        {
             "name": "a_level",
-            "damage": "A A B",
-            "fire_rate": "French Spanish I.T.",
-            "range": "St. Clare's School, Wales",
-            "accuracy": "2009",
-            "weight": "",
+            "grade": "A A B",
+            "subject": "French Spanish I.T.",
+            "institution": "St. Clare's School, Wales",
+            "year": 2009,
+            "field5": 2007,
             "value": "",
             "img": "",
             "info1": "",
@@ -61,34 +70,38 @@ $(document).ready(function(){
         },
         {
             "name": "gcse",
-            "damage": "7 A*, 6A",
-            "fire_rate": "Maths, English etc.",
-            "range": "St. Clare's School, Wales",
-            "accuracy": 2007,
-            "weight": "",
+            "grade": "7 A*, 6A",
+            "subject": "Maths, English etc.",
+            "institution": "St. Clare's School, Wales",
+            "year": "2006-2007",
+            "field5": 2006,
             "value": "",
             "img": "",
-            "info1": "",
-            "info2": "",
+            "info1": "Took 2 GCSEs a year early: German, Business and Communication Systems",
+            "info2": "Studied and took Italian GCSE after-school in final year",
             "info3": ""
         },
         {
             "name": "projman",
-            "damage": "N/A",
-            "fire_rate": "Project Management",
-            "range": "PMD Pro",
-            "accuracy": 2019,
-            "weight": "",
+            "grade": "Pass",
+            "subject": "Project Management for Development Professionals",
+            "institution": "APMG International",
+            "year": 2019,
+            "field5": 2019,
             "value": "",
-            "img": ""
+            "img": "",
+            "info1": "A best practice guide and certification that provides project managers with the skills needed to deliver effective, transparent results to donors and communities.",
+            "info2": "Provides a range of tools and techniques for managing projects and ensuring they are delivered on time, on budget, and within scope.",
+            "info3": ""
         },
         {
             "name": "gbcc",
-            "damage": "London/China",
-            "fire_rate": 2020,
-            "range": 2016,
-            "accuracy": "<a href='http://www.gbcc.org.uk'><u>GBCC</u></a>",
-            "weight": "Rule of Law, International Cooperation",
+            "role": "Senior Project Manager",
+            "location": "London/China",
+            "dates": "2016-2020",
+            "field3": 2016,
+            "area": "Rule of Law, International Cooperation",
+            "link": "<a href='http://www.gbcc.org.uk'><u>GBCC</u></a>",
             "value": "",
             "img": "",
             "info1": "Managed activities under the death penalty and torture prevention projects, funded by the EU and Dutch Embassy respectively, including an extensive redesign of many project management documents, particularly Excel-based budget and timesheet documents.",
@@ -97,11 +110,12 @@ $(document).ready(function(){
         },
         {
             "name": "eucosh",
-            "damage": "Beijing",
-            "fire_rate": 2016,
-            "range": 2015,
-            "accuracy": "N/A",
-            "weight": "OSH, Development of laws and regs",
+            "role": "Office Manager",
+            "location": "Beijing",
+            "dates": "2015-2016",
+            "field3": 2015,
+            "link": "N/A",
+            "area": "OSH, Development of laws and regs",
             "value": "",
             "img": "",
             "info1": "Led a small team of Chinese staff to ensure successful completion of the €9 million project.",
@@ -110,11 +124,12 @@ $(document).ready(function(){
         },
         {
             "name": "british_council",
-            "damage": "Beijing",
-            "fire_rate": 2015,
-            "range": 2014,
-            "accuracy": "<a href='https://www.britishcouncil.cn/en/programmes/society'><u>British Council China</u></a>",
-            "weight": "Social Enterprise",
+            "role": "Project Officer",
+            "location": "Beijing",
+            "field2": "2014-2015",
+            "field3": 2014,
+            "field4": "<a href='https://www.britishcouncil.cn/en/programmes/society'><u>British Council China</u></a>",
+            "field5": "Social Enterprise",
             "value": "",
             "img": "",
             "info1": "Led on the writing of an EU project Concept Note worth €1.5 million in collaboration with Beijing Normal University, focusing on developing civil society organisations’ contribution to governance and development processes in China.",
@@ -123,11 +138,11 @@ $(document).ready(function(){
         },
         {
             "name": "eucosh2",
-            "damage": "Beijing",
-            "fire_rate": 2014,
-            "range": 2014,
-            "accuracy": "N/A<a href='http://www.gbcc.org.uk'><u>GBCC</u></a>",
-            "weight": "OSH, Development of laws and regs",
+            "field1": "Beijing",
+            "dates": 2014,
+            "field3": 2014,
+            "link": "N/A",
+            "area": "OSH, Development of laws and regs",
             "value": "",
             "img": "",
             "info1": "Took the lead on all English language communications and promotional material, including brochures, newsletters, workshop programmes and website articles.",
@@ -136,42 +151,42 @@ $(document).ready(function(){
         },
         {
             "name": "swe",
-            "damage": "Beijing",
-            "fire_rate": "CS50, Udemy",
-            "range": "",
-            "accuracy": "N/A",
-            "weight": "",
+            "yearsstudied": "1",
+            "qualification": "CS50, Udemy",
+            "module": "",
+            "field4": "N/A",
+            "field5": "",
             "value": "",
             "img": "",
-            "info1": "Took the lead on all English language communications and promotional material, including brochures, newsletters, workshop programmes and website articles.",
-            "info2": "Led on the establishment and maintenance of the bilingual project website, using HTML programming language to make all major and minor edits to the website.",
-            "info3": "Assisted the Chinese Language Assistants with two-way translation of project materials between English and Chinese."
+            "info1": "",
+            "info2": "",
+            "info3": ""
         },
         {
             "name": "pm",
-            "damage": "6",
-            "fire_rate": "PMD Pro",
-            "range": "",
-            "accuracy": "N/A",
-            "weight": "",
+            "yearsstudied": "6",
+            "qualification": "PMD Pro",
+            "module": "",
+            "field4": "N/A",
+            "field5": "",
             "value": "",
             "img": "",
-            "info1": "Took the lead on all English language communications and promotional material, including brochures, newsletters, workshop programmes and website articles.",
-            "info2": "Led on the establishment and maintenance of the bilingual project website, using HTML programming language to make all major and minor edits to the website.",
-            "info3": "Assisted the Chinese Language Assistants with two-way translation of project materials between English and Chinese."
+            "info1": " ",
+            "info2": " ",
+            "info3": " "
         },
         {
             "name": "chinese",
-            "damage": "10",
-            "fire_rate": "B.A. First Class (Hons)",
-            "range": "",
-            "accuracy": "N/A",
-            "weight": "",
+            "yearsstudied": "10",
+            "qualification": "B.A. First Class (Hons)",
+            "module": "",
+            "field4": "N/A",
+            "field5": "",
             "value": "",
             "img": "",
-            "info1": "Took the lead on all English language communications and promotional material, including brochures, newsletters, workshop programmes and website articles.",
-            "info2": "Led on the establishment and maintenance of the bilingual project website, using HTML programming language to make all major and minor edits to the website.",
-            "info3": "Assisted the Chinese Language Assistants with two-way translation of project materials between English and Chinese."
+            "info1": "",
+            "info2": "",
+            "info3": ""
         }
 
     ]
@@ -180,29 +195,57 @@ $(document).ready(function(){
         var current_item = $(e.currentTarget).attr('class');
         console.log(current_item);
 
-        for(item in weapons){
-            if(current_item == weapons[item].name){
-                console.log(weapons[item])
+        for(item in cvdata){
+            if(current_item == cvdata[item].name){
+                console.log(cvdata[item])
 
                 var container = $('.item-stats');
-                container.find('.damage').html(weapons[item].damage);
-                container.find('.fire_rate').html(weapons[item].fire_rate);
-                container.find('.range').html(weapons[item].range);
-                container.find('.accuracy').html(weapons[item].accuracy);
-                container.find('.weight').html(weapons[item].weight);
-                container.find('.value').html(weapons[item].value);
+                container.find('.role').html(cvdata[item].role);
+                container.find('.location').html(cvdata[item].location);
+                container.find('.dates').html(cvdata[item].dates);
+                container.find('.area').html(cvdata[item].area);
+                container.find('.link').html(cvdata[item].link);
 
-                container.find(".info1").html(weapons[item].info1);
-                container.find(".info2").html(weapons[item].info2);
-                container.find(".info3").html(weapons[item].info3);
+                container.find('.frontend').html(cvdata[item].frontend);
+                container.find('.backend').html(cvdata[item].backend);
+                container.find('.database').html(cvdata[item].database);
+                
+                container.find('.grade').html(cvdata[item].grade);
+                container.find('.subject').html(cvdata[item].subject);
+                container.find('.institution').html(cvdata[item].institution);
+                container.find('.year').html(cvdata[item].year);
+
+                container.find('.yearsstudied').html(cvdata[item].yearsstudied);
+                container.find('.qualification').html(cvdata[item].qualification);
+                container.find('.module').html(cvdata[item].module);
+
+                container.find('.field1').html(cvdata[item].field1);
+                container.find('.field2').html(cvdata[item].field2);
+                container.find('.field3').html(cvdata[item].field3);
+                container.find('.field4').html(cvdata[item].field4);
+                container.find('.field5').html(cvdata[item].field5);
+                container.find('.value').html(cvdata[item].value);
+
+                container.find(".info1").html(cvdata[item].info1);
+                container.find(".info2").html(cvdata[item].info2);
+                container.find(".info3").html(cvdata[item].info3);
             }
         }
     });
 
-    $('.item-list a').on('click', function(e){
-        $('.item-list a').removeClass('active');
+    $('.item-list1 a').on('click', function(e){
+        $('.item-list1 a').removeClass('active');
         $(e.currentTarget).addClass('active');
-        $('.item-list li').removeClass('active');
-        $('.item-list li').has('a.active').addClass('active');
+        $('.item-list1 li').removeClass('active');
+        $('.item-list1 li').has('a.active').addClass('active');
     });
+
+    $('.item-list2 a').on('click', function(e){
+        $('.item-list2 a').removeClass('active');
+        $(e.currentTarget).addClass('active');
+        $('.item-list2 li').removeClass('active');
+        $('.item-list2 li').has('a.active').addClass('active');
+    });
+
 });
+
