@@ -38,20 +38,26 @@ $(document).ready(function(){
             "damage": "B.A. First Class (Hons)",
             "fire_rate": "Chinese and Korean",
             "range": "SOAS University, London",
-            "accuracy": 2013,
-            "weight": 2009,
+            "accuracy": "2009-2013",
+            "weight": "",
             "value": "",
-            "img": ""
+            "img": "",
+            "info1": "",
+            "info2": "",
+            "info3": ""
         },
         {
             "name": "a_level",
             "damage": "A A B",
             "fire_rate": "French Spanish I.T.",
             "range": "St. Clare's School, Wales",
-            "accuracy": 2009,
-            "weight": 2007,
+            "accuracy": "2009",
+            "weight": "",
             "value": "",
-            "img": ""
+            "img": "",
+            "info1": "",
+            "info2": "",
+            "info3": ""
         },
         {
             "name": "gcse",
@@ -59,7 +65,20 @@ $(document).ready(function(){
             "fire_rate": "Maths, English etc.",
             "range": "St. Clare's School, Wales",
             "accuracy": 2007,
-            "weight": 2006,
+            "weight": "",
+            "value": "",
+            "img": "",
+            "info1": "",
+            "info2": "",
+            "info3": ""
+        },
+        {
+            "name": "projman",
+            "damage": "N/A",
+            "fire_rate": "Project Management",
+            "range": "PMD Pro",
+            "accuracy": 2019,
+            "weight": "",
             "value": "",
             "img": ""
         },
@@ -114,6 +133,45 @@ $(document).ready(function(){
             "info1": "Took the lead on all English language communications and promotional material, including brochures, newsletters, workshop programmes and website articles.",
             "info2": "Led on the establishment and maintenance of the bilingual project website, using HTML programming language to make all major and minor edits to the website.",
             "info3": "Assisted the Chinese Language Assistants with two-way translation of project materials between English and Chinese."
+        },
+        {
+            "name": "swe",
+            "damage": "Beijing",
+            "fire_rate": "CS50, Udemy",
+            "range": "",
+            "accuracy": "N/A",
+            "weight": "",
+            "value": "",
+            "img": "",
+            "info1": "Took the lead on all English language communications and promotional material, including brochures, newsletters, workshop programmes and website articles.",
+            "info2": "Led on the establishment and maintenance of the bilingual project website, using HTML programming language to make all major and minor edits to the website.",
+            "info3": "Assisted the Chinese Language Assistants with two-way translation of project materials between English and Chinese."
+        },
+        {
+            "name": "pm",
+            "damage": "6",
+            "fire_rate": "PMD Pro",
+            "range": "",
+            "accuracy": "N/A",
+            "weight": "",
+            "value": "",
+            "img": "",
+            "info1": "Took the lead on all English language communications and promotional material, including brochures, newsletters, workshop programmes and website articles.",
+            "info2": "Led on the establishment and maintenance of the bilingual project website, using HTML programming language to make all major and minor edits to the website.",
+            "info3": "Assisted the Chinese Language Assistants with two-way translation of project materials between English and Chinese."
+        },
+        {
+            "name": "chinese",
+            "damage": "10",
+            "fire_rate": "B.A. First Class (Hons)",
+            "range": "",
+            "accuracy": "N/A",
+            "weight": "",
+            "value": "",
+            "img": "",
+            "info1": "Took the lead on all English language communications and promotional material, including brochures, newsletters, workshop programmes and website articles.",
+            "info2": "Led on the establishment and maintenance of the bilingual project website, using HTML programming language to make all major and minor edits to the website.",
+            "info3": "Assisted the Chinese Language Assistants with two-way translation of project materials between English and Chinese."
         }
 
     ]
@@ -134,9 +192,9 @@ $(document).ready(function(){
                 container.find('.weight').html(weapons[item].weight);
                 container.find('.value').html(weapons[item].value);
 
-                container.find("#info1").html(weapons[item].info1);
-                container.find("#info2").html(weapons[item].info2);
-                container.find("#info3").html(weapons[item].info3);
+                container.find(".info1").html(weapons[item].info1);
+                container.find(".info2").html(weapons[item].info2);
+                container.find(".info3").html(weapons[item].info3);
             }
         }
     });

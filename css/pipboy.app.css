@@ -28,10 +28,6 @@ body::after {
     margin: 0px 10px;
 }
 
-.navbar .navbar-nav {
-    
-}
-
 .navbar.navbar-expand-lg.navbar-expand-md.navbar-light::before, 
 .navbar.navbar-expand-lg.navbar-expand-md.navbar-light::after {
     height: 7px;
@@ -148,7 +144,7 @@ a {
     filter: sepia(1) hue-rotate(55deg) brightness(0.6) contrast(0.5) saturate(20);
 }
 
-#relax-gif {
+#glasses-gif {
     filter: sepia(1) hue-rotate(55deg) brightness(0.9) contrast(0.5) saturate(8);
 }
 
@@ -160,32 +156,32 @@ a {
     filter: sepia(1) hue-rotate(55deg) brightness(0.7) contrast(0.5) saturate(19);
 }
 
-#skip-gif {
-    filter: sepia(1) hue-rotate(55deg) brightness(0.7) contrast(0.5) saturate(19);
-    height: 400px;
+#transport-gif {
+    height: 50vh;
 }
 
 .vaultboy {
-    height: 300px;
+    height: 40vh;
 }
 
 .vaultboy-container {
-    position: absolute;
-    bottom: 15%;
-    left: 10%;
+    position: fixed;
+    top: 55vh;
+    right: 65vw;
 }
 
-#vaultboy-relax-container {
-    bottom: 4%;
+#vaultboy-glasses-container {
+    top: 45vh;
+    right: 60vw;
 }
 
-#vaultboy-sit-container {
-    bottom: -170%;
+#vaultboy-transport-container {
+    top: 40vh;
+    right: 50vw;
 }
 
-#vaultboy-skip-container {
-    bottom: -140%;
-    left: 5%;
+#vaultboy-walking-container {
+    top: 50vh;
 }
 
 #detail-container {
@@ -196,6 +192,7 @@ a {
     margin: auto;
     display: block;
     position: relative;
+    height: 40vh;
     max-height: 400px;
     margin-top: 50px;
     margin-bottom: 50px;
