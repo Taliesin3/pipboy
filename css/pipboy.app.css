@@ -47,6 +47,11 @@ body::after {
     right: 0px;
 }
 
+.navbar-nav {
+    display: flex;
+    justify-content: space-around;
+}
+
 .nav-item {
     position: relative;
     min-width: fit-content;
@@ -72,7 +77,7 @@ body::after {
     font-size: 32px;
     line-height: 22px;
     padding: 0% 1%;
-    margin: 0% 12%;
+    /* margin: 0% 12%; main nav centering changed when Chinese added*/
     font-weight: bold;
 }
 

@@ -1,5 +1,34 @@
 $(document).ready(function(){
-    var cvdata = [
+    // 1. Type out bio 
+    // TODO: separate javascript into individal files
+    var bio = 'I\'m a self-taught web developer, and am fluent in Mandarin Chinese.|I used to be a project manager working on criminal justice and legal development in China.|I decided to change careers when I finally realised I wanted to solve problems for a living.'
+    var timePerLetter = 50;
+    var newLineCharacter = '|';
+
+    function printOut(text) {
+        for(var i = 0; i < text.length; i++) {
+            var CHAR = text[i];
+            setTimeout(appendLetter, timePerLetter*i, CHAR);
+        }
+    }
+
+    function appendLetter(character)
+    {
+        if(newLineCharacter == character)
+        {
+            $('#bio').append('<br>');
+        }
+        else
+        {
+            $('#bio').append(character);
+        }    
+    }
+
+    printOut(bio);
+    
+
+    // 2. All data used in CV
+    const cvdata = [
         {
             // Pipboy
             "name": "pipboy",
@@ -191,6 +220,7 @@ $(document).ready(function(){
 
     ]
 
+    // 3. Populate CV data
     $('.item-list a').on('click', function(e){
         var current_item = $(e.currentTarget).attr('class');
         console.log(current_item);
@@ -233,6 +263,7 @@ $(document).ready(function(){
         }
     });
 
+    // 4. Handle style changes in relation to clicks
     $('.item-list1 a').on('click', function(e){
         $('.item-list1 a').removeClass('active');
         $(e.currentTarget).addClass('active');
