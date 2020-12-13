@@ -8,6 +8,7 @@ body{
     font-family: Pipboy, sans-serif;
     color: #51fe7d !important;
     background: #272b23;
+    font-size: 2.3vh;
 }
 
 body::after {
@@ -74,7 +75,7 @@ body::after {
 }
 
 #mainNav .nav-item {
-    font-size: 32px;
+    font-size: 3vw;
     line-height: 22px;
     padding: 0% 1%;
     /* margin: 0% 12%; main nav centering changed when Chinese added*/
@@ -96,7 +97,7 @@ body::after {
 }
 
 .nav-tabs .nav-link {
-    font-size:26px;
+    font-size:2.5vw;
     border: 1px solid transparent !important;
     background: transparent !important;
 
@@ -151,18 +152,24 @@ a {
 
 #glasses-gif {
     filter: sepia(1) hue-rotate(55deg) brightness(0.9) contrast(0.5) saturate(8);
+    margin-left: 5vw;
 }
 
 #walk-gif {
     filter: sepia(1) hue-rotate(70deg) saturate(3);
+    margin-left: 5vw;
 }
 
 #study-gif {
     filter: sepia(1) hue-rotate(55deg) brightness(0.7) contrast(0.5) saturate(19);
 }
 
+#thumbsup-gif {
+    margin-left: 5vw;
+}
+
 #transport-gif {
-    height: 50vh;
+    height: 40vh;
 }
 
 .vaultboy {
@@ -171,22 +178,8 @@ a {
 
 .vaultboy-container {
     position: fixed;
-    top: 55vh;
-    right: 65vw;
-}
-
-#vaultboy-glasses-container {
-    top: 45vh;
-    right: 60vw;
-}
-
-#vaultboy-transport-container {
-    top: 40vh;
-    right: 50vw;
-}
-
-#vaultboy-walking-container {
-    top: 50vh;
+    bottom: 10vh;
+    left: 10vw;
 }
 
 #detail-container {
@@ -197,13 +190,18 @@ a {
     margin: auto;
     display: block;
     position: relative;
-    height: 40vh;
+    height: 30vh;
     max-height: 400px;
     /*
     margin-top: 50px;
     margin-bottom: 50px;
-    */
     margin-left: calc(50% - 125px);
+    */
+}
+
+#bio-container {
+    height: 20vh;
+    margin: 2vh 0vh;
 }
 
 .stat-bars > .row {
@@ -219,10 +217,6 @@ a {
     max-width: 500px;
     margin: auto;
     position: relative;
-}
-
-.stat-numbers {
-
 }
 
 .stat-numbers > .col-1, .stat-numbers > .col-2 {
@@ -244,6 +238,8 @@ a {
 .stat-numbers .icon {
     margin: auto;
 }
+
+
 
 .icon > img {
     width: auto;
@@ -276,7 +272,7 @@ a {
     width: fit-content;
     padding: 10px 10px;
     border-radius: 2px;
-    font-size: 15pt;
+    font-size: 3vh;
 }
 
 .item-list li a:hover {
@@ -314,17 +310,18 @@ a {
     /*border: 2px solid #272b23;*/
 }
 
-#level-disclaimer {
-    font-size: small;
+@media (max-height: 1000px) {
+    .info3 {
+        display: none;
+    }
 }
 
 .pip-footer{    
     position: fixed;
     bottom:  0;
-    width: calc(100% - 20px);
-    margin:  10px;
+    width: calc(100% - 2vw);
+    margin:  1vw;
     border: none;
-    font-size: 22px;
 }
 
 .level-progress {
