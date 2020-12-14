@@ -112,7 +112,7 @@ $(document).ready(function(){
     },
     {
         "name": "eucosh",
-        "role": "Office Manager",
+        "role": "Project Manager",
         "location": "Beijing",
         "dates": "2015-2016",
         "field3": 2015,
