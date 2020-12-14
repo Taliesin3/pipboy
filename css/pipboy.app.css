@@ -75,10 +75,10 @@ body::after {
 }
 
 #mainNav .nav-item {
-    font-size: 3vw;
+    font-size: 5vh;
     line-height: 22px;
     padding: 0% 1%;
-    /* margin: 0% 12%; main nav centering changed when Chinese added*/
+    margin-top:1vh;
     font-weight: bold;
 }
 
@@ -97,7 +97,7 @@ body::after {
 }
 
 .nav-tabs .nav-link {
-    font-size:2.5vw;
+    font-size: 4vh;
     border: 1px solid transparent !important;
     background: transparent !important;
 
@@ -152,12 +152,10 @@ a {
 
 #glasses-gif {
     filter: sepia(1) hue-rotate(55deg) brightness(0.9) contrast(0.5) saturate(8);
-    margin-left: 5vw;
 }
 
 #walk-gif {
     filter: sepia(1) hue-rotate(70deg) saturate(3);
-    margin-left: 5vw;
 }
 
 #study-gif {
@@ -165,7 +163,7 @@ a {
 }
 
 #thumbsup-gif {
-    margin-left: 5vw;
+    
 }
 
 #transport-gif {
@@ -179,7 +177,7 @@ a {
 .vaultboy-container {
     position: fixed;
     bottom: 10vh;
-    left: 10vw;
+    left: 20vw;
 }
 
 #detail-container {
@@ -200,8 +198,12 @@ a {
 }
 
 #bio-container {
-    height: 20vh;
-    margin: 2vh 0vh;
+    display: flex;
+    align-items: center;
+    height: 25vh;
+    width: 60vw;
+    margin: 1vh 0vh;
+    margin-left: -15vw;
 }
 
 .stat-bars > .row {
