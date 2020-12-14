@@ -286,6 +286,10 @@ a {
     border: 1px solid #272b23;
 }
 
+.float-right {
+    text-align: right;
+}
+
 #detail-container li {
     list-style: square;
     margin-bottom: 10px;
