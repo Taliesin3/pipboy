@@ -161,7 +161,7 @@ $(document).ready(function(){
         "value": "",
         "img": "",
         "info1": "Completed solo projects including a To Do Note app and a procedurally-generated quiz app, please see the Projects section for more details.",
-        "info2": "Completed online courses such as Harvard’s CS50 and CS50W, and many other disparate online courses via Udemy, FreeCodeCamp etc.",
+        "info2": "Proposed, designed and implemented an overhaul of a well-known Chinese legal blog run by a former law professor colleague.",
         "info3": ""
     },
     {
