@@ -200,10 +200,9 @@ a {
 #bio-container {
     display: flex;
     align-items: center;
+    justify-content: center;
     height: 25vh;
-    width: 60vw;
     margin: 1vh 0vh;
-    margin-left: -15vw;
 }
 
 .stat-bars > .row {
@@ -216,7 +215,7 @@ a {
 }
 
 #status {
-    max-width: 500px;
+    max-width: 60vw;
     margin: auto;
     position: relative;
 }
