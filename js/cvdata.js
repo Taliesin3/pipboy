@@ -131,7 +131,7 @@ $(document).ready(function(){
         "dates": "2014-2015",
         "field3": 2014,
         "link": "<a href='https://www.britishcouncil.cn/en/programmes/society'><u>British Council China</u></a>",
-        "area": "Social Enterprise",
+        "area": "Social enterprise and investment",
         "value": "",
         "img": "",
         "info1": "Led on the writing of an EU project Concept Note worth €1.5 million in collaboration with Beijing Normal University, focusing on developing civil society organisations’ contribution to governance and development processes in China.",
