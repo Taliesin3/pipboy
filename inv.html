@@ -16,13 +16,13 @@
                 <div class="container">
                     <ul class="navbar-nav">
                         <li class="nav-item">
-                            <a href="index.html" class="nav-link">关于ABT</a>
+                            <a href="index.html" class="nav-link">关于ABOUT</a>
                         </li>
                         <li class="nav-item active">
-                            <a href="inv.html" class="nav-link">能力SKL</a>
+                            <a href="inv.html" class="nav-link">编程CODE</a>
                         </li>
                         <li class="nav-item">
-                            <a href="data.html" class="nav-link">经验EXP</a>
+                            <a href="data.html" class="nav-link">其他OTHER</a>
                         </li>
                     </ul>
                 </div>
@@ -35,15 +35,16 @@
                 
                     <ul class="nav nav-tabs">
                         <li class="nav-item">
-                            <a href="#skills" class="nav-link active" data-toggle="tab">
-                                技能SKILLS
+                            <a href="#portfolio" class="nav-link active" data-toggle="tab">
+                                项目PROJECTS
                             </a>
                         </li>
                         <li class="nav-item">
-                            <a href="#qualifications" class="nav-link" data-toggle="tab" role="tab">
-                                资格QUALIFICATIONS
+                            <a href="#skills" class="nav-link" data-toggle="tab">
+                                技能SKILLS
                             </a>
                         </li>
+                        
                         <!--
                         <li class="nav-item">
                             <a href="#aid" class="nav-link" data-toggle="tab">
@@ -54,115 +55,119 @@
                     </ul>
 
                     <div class="tab-content">
-                        <div class="tab-pane active full" id="skills" role="tabpanel">
-                            <ul class="item-list item-list2">
-                                <li class="active"><a href="#" id="swe" class="swe">电脑编程 Web Development </a></li>
-                                <li><a href="#" id="pm" class="pm">项目经理 Project Management</a></li>
-                                <li><a href="#" id="chinese" class="chinese">外语 Foreign Languages</a></li>
-                                <br/><br>
+                        <div class="tab-pane active full" id="portfolio" role="tabpanel">
+                            <ul class="item-list item-list1">
+                                <li class="active"><a href="#" id="todo-app" class="todo-app">To Do Note App</a></li>
+                                <li><a href="#" id="khawiz" class="khawiz">Khawiz Leonard: An NBA Quiz Site</a></li>
+                                <li><a href="#" id="pipboy" class="pipboy">Fallout Pipboy Portfolio Site</a></li>
                             </ul>
-                            
-                            <div id="vaultboy-transport-container" class="vaultboy-container">
-                                <img id="transport-gif" src="assets/glasses2.gif" class="vaultboy greenify" />
+                            <div id="vaultboy-glasses-container" class="vaultboy-container">
+                                <img id="transport-gif" src="assets/transport1.gif" class="vaultboy greenify" />
                             </div>
-
+                            
                             <div class="item-stats">
-                                <h4>Skill Summary:</h4>
+                                <h4>项目总结 Project Summary:</h4>
                                 <div class="row-highlight">
                                     <div class="row">
-                                        <div class="col-4">
-                                            <strong>Main Proficiences</strong>
+                                        <div class="col-3">
+                                            <strong>Front End</strong>
                                         </div>
-                                        <div class="col-8">
-                                            <span class="yearsstudied float-right">Python, JavaScript, React</span>
+                                        <div class="col-9">
+                                            <span class="field1 float-right">React, Material UI</span>
                                         </div>
                                     </div>
                                 </div>
                                 <div class="row-highlight">
                                     <div class="row">
-                                        <div class="col-4">
-                                            <strong>Qualifications</strong>
+                                        <div class="col-3">
+                                            <strong>Back End</strong>
                                         </div>
-                                        <div class="col-8">
-                                            <span class="qualification float-right">CS50, Udemy Courses</span>
+                                        <div class="col-9">
+                                            <span class="field2 float-right">Node, Express, Mongoose</span>
+                                        </div>
+                                    </div>
+                                </div>
+                                <div class="row-highlight">
+                                    <div class="row">
+                                        <div class="col-3">
+                                            <strong>Database</strong>
+                                        </div>
+                                        <div class="col-9">
+                                            <span class="field3 float-right">MongoDB</span> 
+                                        </div>
+                                    </div>
+                                </div>
+                                
+                                <div class="row-highlight">
+                                    <div class="row">
+                                        <div class="col-3">
+                                            <strong>Link</strong>
+                                        </div>
+                                        <div class="col-9">
+                                            <span class="field4 float-right"><a href="nathanhmiles.github.io/todo-app/"><u>GitHub Repo</u></a></span>
                                         </div>
                                     </div>
                                 </div>
 
                                 <div id="detail-container">
-                                    <h4>Skill Overview:</h4>
+                                    <h4>项目概述 Project Overview:</h4>
+                                    <ul>
+                                        <li class="info1">Note-taking single page app using a React / Material UI frontend and a Node / Express / MongoDB backend.</li>
+                                        <li class="info2">Features: secure user registration and login, note editing, note deletion, protected routes.</li>
+                                    </ul>
+                                </div>
+                            </div>
+                        </div>
+                        
+                        <div class="tab-pane" id="skills" role="tabpanel">
+                            <ul class="item-list item-list2">
+                                <li class="active"><a href="#" id="js" class="js">JavaScript-based</a></li>
+                                <li><a href="#" id="python" class="python">Python-based</a></li>
+                                <li><a href="#" id="web" class="web">General Web</a></li>
+                                <li><a href="#" id="toolsother" class="toolsother">Tools/Other</a></li>
+                                
+                                <br/><br>
+                            </ul>
+                            
+                            <div id="vaultboy-transport-container" class="vaultboy-container">
+                                <img id="glasses-gif" src="assets/glasses2.gif" class="vaultboy greenify" />
+                            </div>
+
+                            <div class="item-stats">
+                                <h4>技能总结 Skill Summary:</h4>
+                                <div class="row-highlight">
+                                    <div class="row">
+                                        <div class="col-4">
+                                            <strong>Front End</strong>
+                                        </div>
+                                        <div class="col-8">
+                                            <span class="field1 float-right">React, Material UI, jQuery</span>
+                                        </div>
+                                    </div>
+                                </div>
+                                <div class="row-highlight">
+                                    <div class="row">
+                                        <div class="col-4">
+                                            <strong>Back End</strong>
+                                        </div>
+                                        <div class="col-8">
+                                            <span class="field2 float-right">Node, Express, Mongoose</span>
+                                        </div>
+                                    </div>
+                                </div>
+
+                                <div id="detail-container">
+                                    <h4>技能概述 Skill Overview:</h4>
                                     <ul>
                                         <li class="info1">Completed solo projects including a To Do Note app and a procedurally-generated quiz app, please see the Projects section for more details.</li>
                                         <li class="info2">Completed online courses such as Harvard’s CS50 and CS50W, and many other disparate online courses via Udemy, FreeCodeCamp etc.</li>
                                     </ul>
                                 </div>
                             </div>
-                        </div>    
-                        <div class="tab-pane" id="qualifications" role="tabpanel">
-                            <ul class="item-list item-list1">
-                                <li class="active"><a href="#" id="projman" class="projman">PMD Pro</a></li>
-                                <li><a href="#" id="degree" class="degree">Undergraduate Degree</a></li>
-                                <li><a href="#" id="a_level" class="a_level">A-levels</a></li>
-                                <li><a href="#" id="gcse" class="gcse">GCSEs</a></li>
-                            </ul>
-                            <div id="vaultboy-thumbsup-container" class="vaultboy-container">
-                                <img id="thumbsup-gif" src="assets/thumbsup1.gif" class="vaultboy greenify" />
-                            </div>
+                        </div>  
 
-                            <div class="item-stats">
-                                <h4>资格总结 Qualification Summary:</h4>
-                                <div class="summary-table">
-                                    <div class="row-highlight">
-                                        <div class="row">
-                                            <div class="col-3">
-                                                <strong>Grade(s)</strong>
-                                            </div>
-                                            <div class="col-9">
-                                                <span class="grade float-right">Pass</span>
-                                            </div>
-                                        </div>
-                                    </div>
-                                    <div class="row-highlight">
-                                        <div class="row">
-                                            <div class="col-3">
-                                                <strong>Subject(s)</strong>
-                                            </div>
-                                            <div class="col-9">
-                                                <span class="subject float-right">Project Management for Development Professionals</span>
-                                            </div>
-                                        </div>
-                                    </div>
-                                    <div class="row-highlight">
-                                        <div class="row">
-                                            <div class="col-3">
-                                                <strong>Institution</strong>
-                                            </div>
-                                            <div class="col-9">
-                                                <span class="institution float-right">APMG International</span>
-                                            </div>
-                                        </div>
-                                    </div>
-                                    <div class="row-highlight">
-                                        <div class="row">
-                                            <div class="col-3">
-                                                <strong>Year</strong>
-                                            </div>
-                                            <div class="col-9">
-                                                <span class="year float-right">2019</span>
-                                            </div>
-                                        </div>
-                                    </div>
-                                </div>
-                               
-                                <div id="detail-container">
-                                    <h4>资格概述 Qualification Overview:</h4>
-                                    <ul>
-                                        <li class="info1">A best practice guide and certification that provides project managers with the skills needed to deliver effective, transparent results to donors and communities.</li>
-                                        <li class="info2">Provides a range of tools and techniques for managing projects and ensuring they are delivered on time, on budget, and within scope.</li>
-                                    </ul>
-                                </div>
-                            </div>
-                        </div>
+                        
+
                     </div>
                 </div>
             </div>
