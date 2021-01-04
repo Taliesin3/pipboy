@@ -2,24 +2,24 @@
 $(document).ready(function(){
   // All data used in CV
   const cvdata = [
-      {
-          // To Do App
-          "name": "todo-app",
-          "frontend": "React, Material UI",
-          "backend": "Node, Express, Mongoose",
-          "database": "MongoDB",
-          "link": "<a href='nathanhmiles.github.io/todo-app/'><u>GitHub Repo</u></a> <a href='bit.ly/todoapp-heroku'><u>Heroku Deployment</u></a>",
-          "field5": "",
-          "value": 144,
-          "img": null,
-          "info1": "Note-taking single page app using a React / Material UI frontend and a Node / Express / MongoDB backend.",
-          "info2": "Features: secure user registration and login, note editing, note deletion, protected routes.",
-          "info3": ""
-      },
+    {
+        // To Do App
+        "name": "todo-app",
+        "frontend": "React, Material UI",
+        "backend": "Node, Express, Mongoose",
+        "database": "MongoDB",
+        "link": "<a href='nathanhmiles.github.io/todo-app/'><u>GitHub Repo</u></a> <a href='bit.ly/todoapp-heroku'><u>Heroku Deployment</u></a>",
+        "field5": "",
+        "value": 144,
+        "img": null,
+        "info1": "Note-taking single page app using a React / Material UI frontend and a Node / Express / MongoDB backend.",
+        "info2": "Features: secure user registration and login, note editing, note deletion, protected routes.",
+        "info3": ""
+    },
     {
         // Pipboy
         "name": "pipboy",
-        "frontend": "HTML, CSS, JavaScript",
+        "frontend": "HTML, SCSS, JavaScript/jQuery",
         "backend": "N/A",
         "database": "N/A",
         "link": "<a href='nathanhmiles.github.io/pipboy/'><u>GitHub Pages</u></a>",
@@ -33,7 +33,7 @@ $(document).ready(function(){
     {
         // Khawiz Leonard
         "name": "khawiz",
-        "frontend": "HTML, CSS, JavaScript, Bootstrap",
+        "frontend": "HTML, CSS, JavaScript/jQuery, Bootstrap",
         "backend": "Python (Django)",
         "database": "PostgreSQL",
         "link": "<a href='github.com/Taliesin3/Khawiz-Leonard'><u>GitHub</u></a>",
@@ -45,57 +45,33 @@ $(document).ready(function(){
         "info3": ""
     },
     {
-        "name": "degree",
-        "grade": "B.A. First Class (Hons)",
-        "subject": "Chinese and Korean",
-        "institution": "SOAS University, London",
-        "year": "2013",
-        "field5": "2009",
-        "value": "",
-        "img": "",
-        "info1": "2010 - 2011 Beijing Normal University, China - Chinese Language Year Abroad",
-        "info2": "Summer 2012 - Studied at Korea University, Seoul – Intermediate Korean (A), South-North Korean Relations in Historical Context (A) (Summer Programme)",
+        // Javascript
+        "name": "js",
+        "proficiencies": "React, Material UI, jQuery, Node, Express, Mongoose",
+        "courses": "The Complete 2020 Web Development Bootcamp (The App Brewery)<br/>CS50W (Harvard)",
+        "info1": "Note-taking single page app using a React / Material UI frontend and a Node / Express / MongoDB backend.",
+        "info2": "",
         "info3": ""
     },
     {
-        "name": "a_level",
-        "grade": "A A B",
-        "subject": "French Spanish I.T.",
-        "institution": "St. Clare's School, Wales",
-        "year": 2009,
-        "field5": 2007,
-        "value": "",
-        "img": "",
+        // Python
+        "name": "python",
+        "proficiencies": "Django, Flask, Jinja, Selenium, Beautiful Soup",
+        "courses": "CS50W (Harvard)<br/>Automate the Boring Stuff with Python",
         "info1": "",
         "info2": "",
         "info3": ""
     },
     {
-        "name": "gcse",
-        "grade": "7 A*, 6A",
-        "subject": "Maths, English etc.",
-        "institution": "St. Clare's School, Wales",
-        "year": "2006-2007",
-        "field5": 2006,
-        "value": "",
-        "img": "",
-        "info1": "Took 2 GCSEs a year early: German, Business and Communication Systems",
-        "info2": "Studied and took Italian GCSE after-school in final year",
+        // Tools/Other
+        "name": "other",
+        "proficiencies": "VS Code, Git, Heroku, Bash, MongoDB, SQL, ReST, Photoshop",
+        "courses": "The Missing Semester of Your CS Education (M.I.T.)",
+        "info1": "Hosting two full-stack apps on Heroku, including MongoDB Atlas integration.",
+        "info2": "",
         "info3": ""
     },
-    {
-        "name": "projman",
-        "grade": "Pass",
-        "subject": "Project Management for Development Professionals",
-        "institution": "APMG International",
-        "year": 2019,
-        "field5": 2019,
-        "value": "",
-        "img": "",
-        "info1": "A best practice guide and certification that provides project managers with the skills needed to deliver effective, transparent results to donors and communities.",
-        "info2": "Provides a range of tools and techniques for managing projects and ensuring they are delivered on time, on budget, and within scope.",
-        "info3": ""
-    },
+    // Career
     {
         "name": "gbcc",
         "role": "Senior Project Manager",
@@ -138,90 +114,101 @@ $(document).ready(function(){
         "info2": "Published articles on social enterprise on the websites of the British Council and The Guardian following interviews with prominent social entrepreneurs and social investors from both China and the UK.",
         "info3": "Wrote speeches for both the Department and Country Directors."
     },
-    {
-        "name": "eucosh2",
-        "field1": "Beijing",
-        "dates": 2014,
-        "field3": 2014,
-        "link": "N/A",
-        "area": "OSH, Development of laws and regs",
-        "value": "",
-        "img": "",
-        "info1": "Took the lead on all English language communications and promotional material, including brochures, newsletters, workshop programmes and website articles.",
-        "info2": "Led on the establishment and maintenance of the bilingual project website, using HTML programming language to make all major and minor edits to the website.",
-        "info3": "Assisted the Chinese Language Assistants with two-way translation of project materials between English and Chinese."
-    },
-    {
-        "name": "swe",
-        "yearsstudied": "Python, JavaScript, React",
-        "qualification": "CS50, Udemy",
-        "module": "",
-        "field4": "N/A",
-        "field5": "",
-        "value": "",
-        "img": "",
-        "info1": "Completed solo projects including a To Do Note app and a procedurally-generated quiz app, please see the Projects section for more details.",
-        "info2": "Proposed, designed and implemented an overhaul of a well-known Chinese legal blog run by a former law professor colleague.",
-        "info3": ""
-    },
+    // Project management skill
     {
         "name": "pm",
-        "yearsstudied": "Project planning, budgeting & forecasting, compliance & reporting",
-        "qualification": "Project Management for Development Professionals",
-        "module": "",
-        "field4": "N/A",
+        "specifics": "Project design & bidding, budgeting & forecasting, compliance & reporting",
+        "qualification": "PMD Pro (Project Management for Development Professionals)",
+        "institution": "APMG International, 2019",
+        "year": "2019",
         "field5": "",
         "value": "",
         "img": "",
         "info1": "Designed and managed multi-million pound criminal justice and legal development projects in cooperation with international donors such as the EU and the British Embassy in Beijing.",
-        "info2": "Led on several high-level political and legal events between the UK and China, with participants such as the President of the Supreme Court, members of the House of Lords and the Chinese Ambassador to the UK.",
+        "info2": "Led a small team of Chinese staff to ensure successful completion of a €9 million EU-funded development project based in Beijing.",
         "info3": " "
     },
+    // Event management skill
     {
-        "name": "chinese",
-        "yearsstudied": "Mandarin Chinese, French, Spanish, Italian, Korean",
-        "qualification": "B.A. First Class (Hons) Chinese & Korean",
-        "module": "",
-        "field4": "N/A",
+        "name": "event",
+        "specifics": "Team leadership, detail-oriented",
+        "experience": "UK-China Supreme Court Roundtables",
+        "qualification": "N/A",
+        "institution": "N/A",
+        "year": "N/A",
+        "field5": "",
+        "value": "",
+        "img": "",
+        "info1": "Led on several high-level political and legal events between the UK and China, with participants such as the President of the Supreme Court, members of the House of Lords and the Chinese Ambassador to the UK.",
+        "info2": "",
+        "info3": " "
+    },
+    // Foreign languages skill
+    {
+        "name": "foreign",
+        "specifics": "Mandarin Chinese, Korean, French, Spanish, Italian, German",
+        "qualification": "B.A. 1st Class (Hons) Chinese & Korean<br/>French & Spanish A-levels<br/>Italian & German GCSEs",
+        "institution": "N/A",
+        "year": "N/A",
         "field5": "",
         "value": "",
         "img": "",
         "info1": "Regularly worked exlcusively in Mandarin with Chinese partners such as the Supreme People's Court, Renmin University and the Ministry of Justice.",
         "info2": "Provided ad hoc interpretation for English-speaking guests during visits to China.",
-        "info3": ""
+        "info3": " "
+    },
+    // Musical instruments skill
+    {
+        "name": "music",
+        "specifics": "Piano, electric guitar, bass guitar",
+        "qualification": "N/A",
+        "institution": "N/A",
+        "year": "N/A",
+        "field5": "",
+        "value": "",
+        "img": "",
+        "info1": "Self-taught pianist, favourite pieces include: Moonlight Sonata, Comptine d'un autre été (Amélie)",
+        "info2": "Played electric and bass guitar in a heavy metal band.",
+        "info3": " "
     }
 
   ] 
 
   // Populate CV data
   $('.item-list a').on('click', function(e){
-    var current_item = $(e.currentTarget).attr('class');
-    console.log(current_item);
+    // Get clicked item
+    const current_item = $(e.currentTarget).attr('class');
 
+    // Fill in cv data according to item class
     for(item in cvdata){
+        // Check class against name of the cv data entry
         if(current_item == cvdata[item].name){
-            console.log(cvdata[item])
 
-            var container = $('.item-stats');
+            const container = $('.item-stats');
+            
+            // Code
+            container.find('.frontend').html(cvdata[item].frontend);
+            container.find('.backend').html(cvdata[item].backend);
+            container.find('.database').html(cvdata[item].database);
+            
+            container.find('.proficiencies').html(cvdata[item].proficiencies);
+            container.find('.courses').html(cvdata[item].courses);
+            container.find('.institution').html(cvdata[item].institution);
+            container.find('.year').html(cvdata[item].year);
+            
+            // Other/Career
             container.find('.role').html(cvdata[item].role);
             container.find('.location').html(cvdata[item].location);
             container.find('.dates').html(cvdata[item].dates);
             container.find('.area').html(cvdata[item].area);
             container.find('.link').html(cvdata[item].link);
 
-            container.find('.frontend').html(cvdata[item].frontend);
-            container.find('.backend').html(cvdata[item].backend);
-            container.find('.database').html(cvdata[item].database);
-            
-            container.find('.grade').html(cvdata[item].grade);
-            container.find('.subject').html(cvdata[item].subject);
-            container.find('.institution').html(cvdata[item].institution);
-            container.find('.year').html(cvdata[item].year);
-
-            container.find('.yearsstudied').html(cvdata[item].yearsstudied);
+            // Other/Skills
+            container.find('.specifics').html(cvdata[item].specifics);
             container.find('.qualification').html(cvdata[item].qualification);
-            container.find('.module').html(cvdata[item].module);
+            container.find('.institution').html(cvdata[item].institution);
 
+            // Default fields
             container.find('.field1').html(cvdata[item].field1);
             container.find('.field2').html(cvdata[item].field2);
             container.find('.field3').html(cvdata[item].field3);
@@ -229,6 +216,7 @@ $(document).ready(function(){
             container.find('.field5').html(cvdata[item].field5);
             container.find('.value').html(cvdata[item].value);
 
+            // Info notes
             container.find(".info1").html(cvdata[item].info1);
             container.find(".info2").html(cvdata[item].info2);
             container.find(".info3").html(cvdata[item].info3);
