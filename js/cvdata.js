@@ -112,7 +112,7 @@ $(document).ready(function(){
     },
     {
         "name": "eucosh",
-        "role": "Office Manager",
+        "role": "Project Manager",
         "location": "Beijing",
         "dates": "2015-2016",
         "field3": 2015,
@@ -128,10 +128,10 @@ $(document).ready(function(){
         "name": "british_council",
         "role": "Project Officer",
         "location": "Beijing",
-        "field2": "2014-2015",
+        "dates": "2014-2015",
         "field3": 2014,
-        "field4": "<a href='https://www.britishcouncil.cn/en/programmes/society'><u>British Council China</u></a>",
-        "field5": "Social Enterprise",
+        "link": "<a href='https://www.britishcouncil.cn/en/programmes/society'><u>British Council China</u></a>",
+        "area": "Social enterprise and investment",
         "value": "",
         "img": "",
         "info1": "Led on the writing of an EU project Concept Note worth €1.5 million in collaboration with Beijing Normal University, focusing on developing civil society organisations’ contribution to governance and development processes in China.",
@@ -161,7 +161,7 @@ $(document).ready(function(){
         "value": "",
         "img": "",
         "info1": "Completed solo projects including a To Do Note app and a procedurally-generated quiz app, please see the Projects section for more details.",
-        "info2": "Completed online courses such as Harvard’s CS50 and CS50W, and many other disparate online courses via Udemy, FreeCodeCamp etc.",
+        "info2": "Proposed, designed and implemented an overhaul of a well-known Chinese legal blog run by a former law professor colleague.",
         "info3": ""
     },
     {
