@@ -10,8 +10,6 @@ $(document).ready(function(){
         "database": "MongoDB",
         "link": "<a href='bit.ly/todoapp-heroku'><u>Heroku Deployment</u></a> <a href='nathanhmiles.github.io/todo-app/'><u>GitHub Repo</u></a>",
         "field5": "",
-        "value": 144,
-        "img": null,
         "info1": "Note-taking single page app using a React / Material UI frontend and a Node / Express / MongoDB backend.",
         "info2": "Features: secure user registration and login, note editing, note deletion, protected routes.",
         "info3": ""
@@ -24,8 +22,6 @@ $(document).ready(function(){
         "database": "PostgreSQL",
         "link": "<a href='https://khawiz-leonard.herokuapp.com/'><u>Heroku Deployment</u></a> <a href='github.com/Taliesin3/Khawiz-Leonard'><u>GitHub Repo</u></a>",
         "field5": "",
-        "value": 53,
-        "img": null,
         "info1": "A quiz app that procedurally-generates questions about NBA teams via a Rakuten RapidAPI.",
         "info2": "Features: Secure user registration and login, score tracking, user quiz history and score record.",
         "info3": ""
@@ -38,8 +34,6 @@ $(document).ready(function(){
         "database": "N/A",
         "link": "<a href='https://github.com/nathanhmiles/pipboy'><u>GitHub Repo</u></a>",
         "field5": "",
-        "value": 99,
-        "img": null,
         "info1": "You're here already! This is a portfolio website in the style of a “pipboy” from the Fallout video games.",
         "info2": "Features: highly-customised CSS, retro TV scan lines, custom-edited GIFs.",
         "info3": ""
