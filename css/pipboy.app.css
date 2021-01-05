@@ -141,6 +141,11 @@ body::after {
     color: #51fe7d !important;
 }
 
+a:hover {
+    background: #51fe7d;
+    color: #272b23;
+}
+
 /*
 .nav-tabs > li:nth-child(2) > a {
     opacity: .6;

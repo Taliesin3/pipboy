@@ -8,7 +8,7 @@ $(document).ready(function(){
         "frontend": "React, Material UI",
         "backend": "Node, Express, Mongoose",
         "database": "MongoDB",
-        "link": "<a href='nathanhmiles.github.io/todo-app/'><u>GitHub Repo</u></a> <a href='bit.ly/todoapp-heroku'><u>Heroku Deployment</u></a>",
+        "link": "<a href='bit.ly/todoapp-heroku'><u>Heroku Deployment</u></a> <a href='nathanhmiles.github.io/todo-app/'><u>GitHub Repo</u></a>",
         "field5": "",
         "value": 144,
         "img": null,
@@ -17,31 +17,31 @@ $(document).ready(function(){
         "info3": ""
     },
     {
-        // Pipboy
-        "name": "pipboy",
-        "frontend": "HTML, SCSS, JavaScript/jQuery",
-        "backend": "N/A",
-        "database": "N/A",
-        "link": "<a href='nathanhmiles.github.io/pipboy/'><u>GitHub Pages</u></a>",
-        "field5": "",
-        "value": 99,
-        "img": null,
-        "info1": "Portfolio website in the style of a “pipboy” from the Fallout video games.",
-        "info2": "Features: highly-customised CSS, retro TV scan lines, image editing.",
-        "info3": ""
-    },
-    {
         // Khawiz Leonard
         "name": "khawiz",
         "frontend": "HTML, CSS, JavaScript/jQuery, Bootstrap",
         "backend": "Python (Django)",
         "database": "PostgreSQL",
-        "link": "<a href='github.com/Taliesin3/Khawiz-Leonard'><u>GitHub</u></a>",
+        "link": "<a href='https://khawiz-leonard.herokuapp.com/'><u>Heroku Deployment</u></a> <a href='github.com/Taliesin3/Khawiz-Leonard'><u>GitHub Repo</u></a>",
         "field5": "",
         "value": 53,
         "img": null,
         "info1": "A quiz app that procedurally-generates questions about NBA teams via a Rakuten RapidAPI.",
         "info2": "Features: Secure user registration and login, score tracking, user quiz history and score record.",
+        "info3": ""
+    },
+    {
+        // Pipboy
+        "name": "pipboy",
+        "frontend": "HTML, SCSS, JavaScript/jQuery",
+        "backend": "N/A",
+        "database": "N/A",
+        "link": "<a href='https://github.com/nathanhmiles/pipboy'><u>GitHub Repo</u></a>",
+        "field5": "",
+        "value": 99,
+        "img": null,
+        "info1": "You're here already! This is a portfolio website in the style of a “pipboy” from the Fallout video games.",
+        "info2": "Features: highly-customised CSS, retro TV scan lines, custom-edited GIFs.",
         "info3": ""
     },
     {
