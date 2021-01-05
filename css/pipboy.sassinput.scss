@@ -186,14 +186,17 @@ a {
   filter: sepia(1) hue-rotate(55deg) brightness(0.7) contrast(0.5) saturate(19);
 }
 
-#transport-gif, .vaultboy {
-  height: 40vh;
+#thumbsup-gif {
+  margin-top: 5vh;
 }
 
-.vaultboy-container {
-  position: fixed;
-  bottom: 10vh;
-  left: 20vw;
+#transport-gif {
+  margin-top: 5vh;
+}
+
+.vaultboy {
+  height: 40vh;
+  margin-left: 5vw;
 }
 
 #detail-container {

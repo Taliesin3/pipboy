@@ -9,6 +9,30 @@
     }
 }
 
+@media (max-height: 1000px) {
+    .info3 {
+        display: none;
+    }
+}
+
+@media (max-width: 991px) {
+    .vaultboy {
+        display: none;
+    }
+
+    .small-nav {
+        display: block;
+    }
+
+    .large-nav {
+        display: none;
+    }
+}
+
+.small-nav {
+    display: none;
+}
+
 body{
     font-family: Pipboy, sans-serif;
     color: #51fe7d !important;
@@ -161,6 +185,7 @@ a {
 
 #walk-gif {
     filter: sepia(1) hue-rotate(70deg) saturate(3);
+    height: 35vh;
 }
 
 #study-gif {
@@ -168,21 +193,16 @@ a {
 }
 
 #thumbsup-gif {
-    
+    margin-top: 5vh;
 }
 
 #transport-gif {
-    height: 40vh;
+    margin-top: 5vh;
 }
 
 .vaultboy {
     height: 40vh;
-}
-
-.vaultboy-container {
-    position: fixed;
-    bottom: 10vh;
-    left: 20vw;
+    margin-left: 5vw;
 }
 
 #detail-container {
@@ -310,9 +330,7 @@ a {
 }
 
 .item-stats {
-    position: absolute;
-    right: 15px;
-    width: 50%;
+    
 }
 
 .item-stats .row {
@@ -320,11 +338,6 @@ a {
     /*border: 2px solid #272b23;*/
 }
 
-@media (max-height: 1000px) {
-    .info3 {
-        display: none;
-    }
-}
 
 .pip-footer{    
     position: fixed;
@@ -347,11 +360,7 @@ a {
     width: 70%; 
 }
 
-.pip-footer .col-3, .pip-footer .col-6 {
-    background: rgba(81, 254, 125, 0.15)
-}
-
-.pip-footer .col-6 {
-    border-left: 2px solid #272b23;
-    border-right: 2px solid #272b23;
+.footer-section {
+    background: rgba(81, 254, 125, 0.15);
+    border: 1px solid #272b23;
 }
