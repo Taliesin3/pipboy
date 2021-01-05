@@ -168,14 +168,6 @@ a {
     color: #51fe7d;
 }
 
-.center-image .map {
-    display: block;
-    position: absolute;
-    max-width: 900px;
-    margin-left: calc(50% - 450px);
-    margin-bottom: 50px;
-}
-
 .greenify {
     filter: sepia(1) hue-rotate(55deg) brightness(0.7) contrast(0.8) saturate(10);
 }
@@ -215,9 +207,7 @@ a {
 }
 
 .center-image #vaultBoy {
-    margin: auto;
-    display: block;
-    position: relative;
+    margin: 2.5vh auto 2.5vh auto;
     height: 30vh;
     max-height: 400px;
     /*
@@ -225,14 +215,6 @@ a {
     margin-bottom: 50px;
     margin-left: calc(50% - 125px);
     */
-}
-
-#bio-container {
-    display: flex;
-    align-items: center;
-    justify-content: center;
-    height: 20vh;
-    margin: 1vh 0vh;
 }
 
 .stat-bars > .row {
@@ -247,7 +229,10 @@ a {
 #status {
     max-width: 60vw;
     margin: auto;
-    position: relative;
+    display: flex;
+    flex-direction: column;
+    justify-content: space-evenly;
+    height: 80vh;
 }
 
 .stat-numbers > .col-1, .stat-numbers > .col-2 {

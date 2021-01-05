@@ -33,7 +33,7 @@ $(document).ready(function(){
     {
         // Pipboy
         "name": "pipboy",
-        "frontend": "HTML, SCSS, JavaScript/jQuery",
+        "frontend": "HTML, SCSS, JavaScript/jQuery, Bootstrap, Flexbox",
         "backend": "N/A",
         "database": "N/A",
         "link": "<a href='https://github.com/nathanhmiles/pipboy'><u>GitHub Repo</u></a>",
