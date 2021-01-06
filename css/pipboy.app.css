@@ -317,7 +317,7 @@ a {
 
 .pip-footer{    
     position: absolute;
-    bottom:  0;
+    bottom:  10px;
     width: calc(100% - 2vw);
     margin:  10px;
     border: none;
