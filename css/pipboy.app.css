@@ -15,15 +15,19 @@
     }
 }
 
-@media (max-width: 991px) {
+@media (max-width: 768px) {
     .vaultboy {
         display: none;
     }
 
+    .item-list {
+        margin-bottom: 5vh;
+    }
 }
 
-.small-nav {
-    display: none;
+html {
+    position: relative;
+    min-height: 100%;
 }
 
 body{
@@ -31,6 +35,7 @@ body{
     color: #51fe7d !important;
     background: #272b23;
     font-size: 2.3vh;
+    margin-bottom: 30px;
 }
 
 body::after {
@@ -183,11 +188,9 @@ a {
 }
 
 #thumbsup-gif {
-    margin-top: 5vh;
 }
 
 #transport-gif {
-    margin-top: 5vh;
 }
 
 .vaultboy {
@@ -220,12 +223,11 @@ a {
 }
 
 #status {
-    max-width: 60vw;
+    max-width: 80vw;
     margin: auto;
     display: flex;
     flex-direction: column;
     justify-content: space-evenly;
-    height: 80vh;
 }
 
 .stat-numbers > .col-1, .stat-numbers > .col-2 {
@@ -268,7 +270,7 @@ a {
     float: left;
     padding: 0;
     list-style: none;
-    margin: 0px;
+    width: 100%;
 }
 
 
@@ -303,17 +305,8 @@ a {
     margin-bottom: 10px;
 }
 
-
-.tab-content {
-    margin-top: 3vh;
-}
-
 .tab-pane.full {
     height: calc(100vh - 180px);
-}
-
-.item-stats {
-    
 }
 
 .item-stats .row {
@@ -323,11 +316,12 @@ a {
 
 
 .pip-footer{    
-    position: fixed;
+    position: absolute;
     bottom:  0;
     width: calc(100% - 2vw);
-    margin:  1vw;
+    margin:  10px;
     border: none;
+    height: 20px;
 }
 
 .level-progress {
