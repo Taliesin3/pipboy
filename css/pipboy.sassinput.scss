@@ -25,9 +25,8 @@ $table-border: 1px solid $background-colour;
   .vaultboy {
       display: none;
   }
-
-  .item-list {
-      margin-bottom: 5vh;
+  .nav-item {
+    font-size: 5vw !important;
   }
 }
 
@@ -57,7 +56,7 @@ body {
   }
 }
 
-.navbar.navbar-expand-lg.navbar-expand-md.navbar-light {
+.navbar {
   border-bottom: 2px solid;
   margin: 0px 10px;
 
@@ -180,6 +179,7 @@ a {
 a:hover {
   background: #51fe7d;
   color: #272b23;
+}
 
 .center-image .map {
   display: block;
@@ -237,6 +237,10 @@ a:hover {
   */
 }
 
+#name-container {
+  margin-top: 5vh;
+}
+
 #bio-container {
   display: flex;
   align-items: center;
@@ -247,10 +251,10 @@ a:hover {
 
 #status {
   max-width: 80vw;
-    margin: auto;
-    display: flex;
-    flex-direction: column;
-    justify-content: space-evenly;
+  margin: auto;
+  display: flex;
+  flex-direction: column;
+  justify-content: space-evenly;
 }
 
 .item-list {
