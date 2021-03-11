@@ -3,6 +3,18 @@ $(document).ready(function(){
   // All data used in CV
   const cvdata = [
     {
+        // Overwatch Card Game
+        "name": "owcardgame",
+        "frontend": "React, JavaScript",
+        "backend": "N/A",
+        "database": "N/A",
+        "link": "<a href='nathanhmiles.github.io/owcardgame'><u>nathanhmiles.github.io/owcardgame</u></a> <a href='github.com/nathanhmiles/owcardgame'><u>GitHub Repo</u></a>",
+        "field5": "",
+        "info1": "Two-player fan-made card game based on Blizzard’s team-based FPS video game “Overwatch”.",
+        "info2": "Features: 34 character cards with two abilities each, complex interaction of damage, healing, shields, and status effects, match scoring system, character “barks”.",
+        "info3": ""
+    },
+    {
         // To Do App
         "name": "todo-app",
         "frontend": "React, Material UI",
@@ -34,7 +46,7 @@ $(document).ready(function(){
         "database": "N/A",
         "link": "<a href='https://github.com/nathanhmiles/pipboy'><u>GitHub Repo</u></a>",
         "field5": "",
-        "info1": "You're here already! This is a portfolio website in the style of a “pipboy” from the Fallout video games.",
+        "info1": "You're here already! This is a longform CV website in the style of a “pipboy” from the Fallout video games.",
         "info2": "Features: highly-customised CSS, retro TV scan lines, custom-edited GIFs.",
         "info3": ""
     },
