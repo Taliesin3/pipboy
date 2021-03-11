@@ -8,7 +8,7 @@ $(document).ready(function(){
         "frontend": "React, JavaScript",
         "backend": "N/A",
         "database": "N/A",
-        "link": "<a href='nathanhmiles.github.io/owcardgame'><u>nathanhmiles.github.io/owcardgame</u></a> <a href='github.com/nathanhmiles/owcardgame'><u>GitHub Repo</u></a>",
+        "link": "<a href='https://nathanhmiles.github.io/owcardgame'><u>nathanhmiles.github.io/owcardgame</u></a> <a href='github.com/nathanhmiles/owcardgame'><u>GitHub Repo</u></a>",
         "field5": "",
         "info1": "Two-player fan-made card game based on Blizzard’s team-based FPS video game “Overwatch”.",
         "info2": "Features: 34 character cards with two abilities each, complex interaction of damage, healing, shields, and status effects, match scoring system, character “barks”.",
