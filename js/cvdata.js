@@ -21,7 +21,7 @@ $(document).ready(function () {
       frontend: "React, Material UI",
       backend: "Node, Express, Mongoose",
       database: "MongoDB",
-      link: "<a href='https://taski-notes.herokuapp.com/'><u>Heroku Deployment</u></a> <a href='nathanhmiles.github.io/todo-app/'><u>GitHub Repo</u></a>",
+      link: "<a href='https://taski-notes.herokuapp.com/'><u>taski-notes.herokuapp.com</u></a> <a href='nathanhmiles.github.io/todo-app/'><u>GitHub Repo</u></a>",
       field5: "",
       info1:
         "Note-taking single page app using a React / Material UI frontend and a Node / Express / MongoDB backend.",
